@@ -1,0 +1,19 @@
+/* A kép tartója legyen pozícionált */
+.image-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Az input mező pozícionálása a kép fölé */
+.input-on-image {
+    position: absolute;
+    width: 250px;
+    top: 12%; /* A kép helye magasságá */
+    left: 12%; /* A kép helye szélesség */
+    transform: translate(-50%, -50%); /* Középre igazítás */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #6300ed;
+    border-radius: 15px;
+}

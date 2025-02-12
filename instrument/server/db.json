@@ -1,0 +1,204 @@
+{
+  "instruments": [
+    {
+      "id": "1",
+      "name": "guitar",
+      "status": "damaged",
+      "owner": "John Doe",
+      "price": 140,
+      "available": false
+    },
+    {
+      "id": "2",
+      "name": "piano",
+      "status": "cleaning",
+      "owner": "Emily White",
+      "price": 250,
+      "available": true
+    },
+    {
+      "id": "3",
+      "name": "drum",
+      "status": "damaged",
+      "owner": "Robert Brown",
+      "price": 180,
+      "available": false
+    },
+    {
+      "id": "4",
+      "name": "banjo",
+      "status": "lost",
+      "owner": "Alice Black",
+      "price": 90,
+      "available": false
+    },
+    {
+      "id": "5",
+      "name": "violin",
+      "status": "free",
+      "owner": "Sophia Green",
+      "price": 120,
+      "available": true
+    },
+    {
+      "id": "6",
+      "name": "flute",
+      "status": "rented",
+      "owner": "Michael Johnson",
+      "price": 80,
+      "available": true
+    },
+    {
+      "id": "7",
+      "name": "harmonica",
+      "status": "cleaning",
+      "owner": "Laura Grey",
+      "price": 50,
+      "available": true
+    },
+    {
+      "id": "8",
+      "name": "trumpet",
+      "status": "damaged",
+      "owner": "Daniel Wilson",
+      "price": 130,
+      "available": false
+    },
+    {
+      "id": "9",
+      "name": "cello",
+      "status": "free",
+      "owner": "Liam Carter",
+      "price": 200,
+      "available": true
+    },
+    {
+      "id": "10",
+      "name": "saxophone",
+      "status": "free",
+      "owner": "Emma Davis",
+      "price": 300,
+      "available": true
+    },
+    {
+      "id": "11",
+      "name": "guitar",
+      "status": "rented",
+      "owner": "Chris Parker",
+      "price": 175,
+      "available": true
+    },
+    {
+      "id": "12",
+      "name": "keyboard",
+      "status": "cleaning",
+      "owner": "Olivia Smith",
+      "price": 220,
+      "available": true
+    },
+    {
+      "id": "13",
+      "name": "viola",
+      "status": "damaged",
+      "owner": "Ethan Adams",
+      "price": 160,
+      "available": false
+    },
+    {
+      "id": "14",
+      "name": "clarinet",
+      "status": "cleaning",
+      "owner": "Isabella Martinez",
+      "price": 110,
+      "available": true
+    },
+    {
+      "id": "15",
+      "name": "mandolin",
+      "status": "free",
+      "owner": "Benjamin Brown",
+      "price": 140,
+      "available": true
+    },
+    {
+      "id": "16",
+      "name": "guitar",
+      "status": "rented",
+      "owner": "Charlotte Green",
+      "price": 190,
+      "available": true
+    },
+    {
+      "id": "17",
+      "name": "drum set",
+      "status": "cleaning",
+      "owner": "Noah Turner",
+      "price": 275,
+      "available": true
+    },
+    {
+      "id": "18",
+      "name": "ukulele",
+      "status": "damaged",
+      "owner": "James Hall",
+      "price": 95,
+      "available": false
+    },
+    {
+      "id": "19",
+      "name": "bass",
+      "status": "lost",
+      "owner": "Amelia Lopez",
+      "price": 300,
+      "available": false
+    },
+    {
+      "id": "20",
+      "name": "trumpet",
+      "status": "rented",
+      "owner": "Harper Wright",
+      "price": 125,
+      "available": true
+    },
+    {
+      "id": "21",
+      "name": "harmonica",
+      "status": "rented",
+      "owner": "Elijah King",
+      "price": 65,
+      "available": true
+    },
+    {
+      "id": "22",
+      "name": "banjo",
+      "status": "cleaning",
+      "owner": "Henry Scott",
+      "price": 100,
+      "available": true
+    },
+    {
+      "id": "23",
+      "name": "piano",
+      "status": "damaged",
+      "owner": "Zoey Ramirez",
+      "price": 350,
+      "available": false
+    },
+    {
+      "id": "24",
+      "name": "guitar",
+      "status": "lost",
+      "owner": "Mia Peterson",
+      "price": 210,
+      "available": false
+    },
+    {
+      "id": "25",
+      "name": "violin",
+      "status": "rented",
+      "owner": "Lucas Reed",
+      "price": 90,
+      "available": true
+    }
+  ]
+}

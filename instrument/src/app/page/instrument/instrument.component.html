@@ -1,0 +1,52 @@
+<div class="row">
+    <div class="col-3">
+        <h5>Use filter:</h5>
+        <input
+            #filterInput
+            [value]="filterText()"
+            (input)="filterText.set(filterInput.value)"
+            type="text"
+            class="input"
+            placeholder="Search..." >
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Owner</th>
+                    <th>Price</th>
+                    <th>Available</th>
+                    <th>manage</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (instrument of list$ | async | filter: filterText(); track $index){
+                    <tr>
+                        <td>{{instrument.id}}</td>
+                        <td>{{instrument.name}}</td>
+                        <td>{{instrument.status | uppercase}}</td>
+                        <td>{{instrument.owner}}</td>
+                        <td>{{instrument.price | currency}}</td>
+                        <td>{{instrument.available}}</td>
+                        <td>
+                            <div class="btn-group">
+                                <button [routerLink]="['edit', instrument.id]" class="btn btn-info">
+                                    <i class="fa fa-edit"></i>
+                                </button>
+                                <button (click)="onRemove(instrument)" class="btn btn-danger">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

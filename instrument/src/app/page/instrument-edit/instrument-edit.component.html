@@ -1,0 +1,62 @@
+<h3 class="w-50 text-center mx-auto">
+    Edit Instrument    
+</h3>
+
+@if(instrument$ | async; as instrument){
+    <form #editForm="ngForm" (ngSubmit)="onUpdate(instrument)" class="w-50 mx-auto">
+
+        <div class="div form-group mt-3">
+            <label for="">Name</label>
+            <input required pattern="[a-zA-Z ]+$" type="text" [(ngModel)]="instrument.name" name="name" class="form-control">
+            @if(editForm.controls['name'].invalid ){
+                <div class="alert alert-danger">
+                    Name is required
+                </div>
+            }
+        </div>
+
+        <div class="div form-group mt-3">
+            <label for="">Price</label>
+            <input required pattern="^[0-9]+$" type="number" [(ngModel)]="instrument.price" name="price" class="form-control">
+            @if(editForm.controls['price'].invalid ){
+                <div class="alert alert-danger">
+                    Price is required
+                </div>
+            }
+        </div>
+
+        <div class="div form-group mt-3">
+            <label for="">Owner</label>
+            <input required pattern="[a-zA-Z ]+$" type="text" [(ngModel)]="instrument.owner" name="owner" class="form-control">
+            @if(editForm.controls['owner'].invalid ){
+                <div class="alert alert-danger">
+                    Owner is required
+                </div>
+            }
+        </div>
+
+        <div class="div form-group mt-3">
+            <label for="">Status</label>
+            <input required pattern="[a-zA-Z ]+$" type="text" [(ngModel)]="instrument.status" name="status" class="form-control">
+            @if(editForm.controls['status'].invalid ){
+                <div class="alert alert-danger">
+                    Status is required
+                </div>
+            }
+        </div>
+
+        <div class="form-check mt-3">
+            <input name="available" [(ngModel)]="instrument.available" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              available
+            </label>
+          </div>
+          
+
+        <div class="div form-group mt-3">
+            <button [disabled] = "editForm.invalid" type="submit" class="btn btn-primary">Update</button>
+        </div>
+
+    </form>
+}
+
